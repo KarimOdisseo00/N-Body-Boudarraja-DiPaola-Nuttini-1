@@ -1,3 +1,5 @@
+//Committed by Elena Nuttini
+
 // File adibito alla gestione delle funzioni usate globalmente per fare la simulazione. 
 // possiamo già identificare un metodo utile per far proseguire la simulazione dove specifica ciò che accade per ogni timestep
 

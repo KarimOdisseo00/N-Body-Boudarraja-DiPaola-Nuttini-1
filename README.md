@@ -1,0 +1,2 @@
+# N-Body-Boudarraja-DiPaola-Nuttini
+NBody implementation for the Advanced Methods for Scientific Computing (AMSC) Course @Polmi.

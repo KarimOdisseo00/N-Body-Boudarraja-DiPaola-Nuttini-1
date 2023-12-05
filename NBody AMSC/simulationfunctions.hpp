@@ -64,10 +64,12 @@ public:
         }
         std::cout<<"!!!! INIZIO DELLA SIMULAZIONE !!!!"<<std::endl;
         std::cout<<" "<<std::endl;
-        for(int i = 0; i<particles.size(); ++i){
-            particles[i].calcCoefficients(particles[i+1]);
-            particles[i].calcAccelleration();
-            //ATTENZIONE DEVO GESTIRE L'ULTIMA!
+        for(unsigned int i = 0; i<particles.size(); ++i){
+            for(unsigned int j=0; j<particles.size(); ++j){
+                if(i==j){continue;}
+                particles[i].calcCoefficients(particles[i+1]);
+                particles[i].calcAccelleration();
+            }
         }
         double dt = 10;
         for(Particle particle : particles){
